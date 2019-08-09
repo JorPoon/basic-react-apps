@@ -6,6 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>JMP COUNTER</h1>
+        <Counter/>
       </header>
     </div>
   );
