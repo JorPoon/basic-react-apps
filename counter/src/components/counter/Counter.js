@@ -11,6 +11,9 @@ class Counter extends React.Component {
         return (
             <div>
                 <h2>Counter: {this.state.count}</h2>
+                <button>Increment</button>
+                <button>Decrement</button>
+                <button>Auto</button>
             </div>
         )
     }
