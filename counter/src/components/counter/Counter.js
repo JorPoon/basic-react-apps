@@ -1,21 +1,30 @@
-import React, { Component } from 'react';
-import ReactDom from 'react-dom'
-
+import React, { Component } from "react";
+import ReactDom from "react-dom";
 
 class Counter extends React.Component {
-    state = {
-        count: 0
-    }
+  constructor() {
+    super();
+    this.state = {
+      count: 0
+    };
+  }
 
-    render() {
-        return (
-            <div>
-                <h2>Counter: {this.state.count}</h2>
-                <button>Increment</button>
-                <button>Decrement</button>
-                <button>Auto</button>
-            </div>
-        )
-    }
-    
+  increment = () => {
+    this.setState({
+      count: this.state.count + 1
+    });
+  };
+
+  render() {
+    return (
+      <div>
+        <h2>Counter: {this.state.count}</h2>
+        <button onClick={this.increment}>Increment</button>
+        <button>Decrement</button>
+        <button>Auto</button>
+      </div>
+    );
+  }
 }
+
+export default Counter;
