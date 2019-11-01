@@ -27,11 +27,12 @@ const Dogs = props => {
         
         fetchData();
         console.log(dogs)
-        console.log(result.data.mesage.bulldog)
+        
     },[])
 
     return (
         <h1>Dogs</h1>
+        //data for each to pass down for each dog
     )
 }
 
