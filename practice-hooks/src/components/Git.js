@@ -26,7 +26,9 @@ const Git = () => {
         <>
         <h1>Git Card</h1>
         <h2>{user.login}</h2>
-        <p>profile url</p>
+        <p>Profile url: 
+        <a href={user["html_url"]}>{user["html_url"]}</a>
+        </p>
         </>
     )
 }
