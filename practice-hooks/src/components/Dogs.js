@@ -9,7 +9,7 @@ const Dogs = props => {
         axios
         .get('https://dog.ceo/api/breeds/list/all')
         .then(res => {
-            console.log(res)
+            console.log(res.data)
         })
         .catch(err => {
             console.log(err)
@@ -17,16 +17,7 @@ const Dogs = props => {
     }
 
     useEffect( () => {
-        const fetchData = async () => {
-            const result = await axios(
-              'https://dog.ceo/api/breeds/list/all',
-            );
-                setDogs(result.data.message.bulldog)
-                
-        }
-        
-        fetchData();
-        console.log(dogs)
+        getDogs()
         
     },[])
 
