@@ -10,8 +10,8 @@ function App() {
       <header className="App-header">
         <h1>Hooks</h1>
         {/* <Cars/> */}
-        {/* <Dogs/> */}
-        <Git/>
+        <Dogs/>
+        {/* <Git/> */}
       </header>
     </div>
   );
